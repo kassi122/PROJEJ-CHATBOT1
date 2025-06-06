@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGOS AI - Chatbot</title>
+  <link rel="stylesheet" href="chatbot5.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h1>🟢 LOGOS AI</h1>
+      <nav>
+        <ul>
+          <li><a href="javascript:void(0)" id="clearHistory">Nouvelle conversation</a></li>
+          <li><a href="javascript:void(0)" id="showHistory">Historique et sauvegardes des conversations</a></li>
+          
+          <li><a href="parametre.html">Paramètres</a></li>
+          <li><a href="login.html">Se déconnecter</a></li>
+        </ul>
+        <div class="user-info">
+          <p>[kassikassiemma12@gmail.com]</p>
+          
+          <p><a href="javascript:void(0)" id="toggleDarkMode">Mode sombre 🌙</a></p>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="chat-area">
+      <div id="chatbox" class="chatbox"></div>
+      <div class="input-area">
+        <button id="micBtn" title="Activer la reconnaissance vocale">🎤</button>
+        <input type="text" id="userInput" placeholder="Tapez votre message ou utilisez le micro..." />
+        <button id="sendBtn">➤</button>
+      </div>
+    </main>
+
+    <!-- Modal historique -->
+    <div id="historyModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Historique et Sauvegardes des conversations</h2>
+        <div id="historyList"></div>
+        <div id="historyContent"></div>
+        <button id="exportJson">Exporter en JSON</button>
+        <button id="closeHistory">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot5.js"></script>
+</body>
+</html>
